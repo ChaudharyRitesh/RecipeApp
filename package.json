@@ -1,0 +1,33 @@
+{
+  "name": "recipe-loader",
+  "version": "1.0.0",
+  "description": "simple recipe loading application",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --out-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaudharyRitesh/RecipeApp.git"
+  },
+  "keywords": [
+    "recipe"
+  ],
+  "author": "Ritesh Chaudhari",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.32.6",
+    "parcel": "^1.12.4"
+  },
+  "bugs": {
+    "url": "https://github.com/ChaudharyRitesh/RecipeApp/issues"
+  },
+  "homepage": "https://github.com/ChaudharyRitesh/RecipeApp#readme",
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "fractional": "^1.0.0",
+    "img": "^3.0.3",
+    "regenerator-runtime": "^0.13.7"
+  }
+}
