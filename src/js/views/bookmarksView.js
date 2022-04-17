@@ -3,10 +3,10 @@ import previewView from './previewView.js';
 import icons from '../../img/icons.svg';
 import { state } from '../model.js';
 
-
 class BookmarksView extends View {
   _parentElement = document.querySelector('.bookmarks__list');
-  _errorMessage = 'No bookmarks found yet. Please find a nice recipe to bookmark it for getting the recipes. 😊😊';
+  _errorMessage =
+    'No bookmarks found yet. Please find a nice recipe to bookmark it for getting the recipes. 😊😊';
   _message = '';
 
   addHandlerRender(handler) {
