@@ -33,9 +33,9 @@ export const loadRecipe = async function (id) {
     const data = await AJAX(`${API_URL}${id}?key=${KEY}`);
     state.recipe = createRecipeObject(data);
 
-    if (state.bookmarks.some(bookmark => bookmark.id === id))
+    if (state.bookmarks.some(bookmark => bookmark.id === id)) {
       state.recipe.bookmarked = true;
-    else state.recipe.bookmarked = false;
+    } else state.recipe.bookmarked = false;
 
     // console.log(state.recipe);
   } catch (err) {
@@ -130,10 +130,11 @@ export const uploadRecipe = async function (newRecipe) {
       .map(ing => {
         const ingArr = ing[1].split(',').map(el => el.trim());
         // const ingArr = ing[1].replaceAll(' ', '').split(',');
-        if (ingArr.length !== 3)
+        if (ingArr.length !== 3) {
           throw new Error(
             'Wrong ingredient fromat! Please use the correct format :)'
           );
+        }
 
         const [quantity, unit, description] = ingArr;
 
